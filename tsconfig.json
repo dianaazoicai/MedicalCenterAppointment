@@ -1,0 +1,44 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "paths": {
+      "@layout-services/*":["src/app/layout/services/*"],
+      "@shared/*":["src/app/shared/*"],
+      "@authentication/*":["src/app/authentication/*"],
+      "@environments/*":["src/environments/*"],
+      "@companies/*":["src/app/companies/*"],
+      "@guests/*":["src/app/guests/*"],
+      "@headquarters/*":["src/app/headquarters/*"],
+      "@rooms/*":["src/app/rooms/*"],
+      "@errors/*":["src/app/errors/*"],
+      "@home/*":["src/app/home/*"]
+    },
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "es2020",
+    "lib": [
+      "es2018",
+      "dom"
+    ]
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}
